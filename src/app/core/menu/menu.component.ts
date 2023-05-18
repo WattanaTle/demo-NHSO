@@ -1,5 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { PrimeIcons } from 'primeng/api';
 
 @Component({
   selector: 'app-menu',
@@ -38,6 +39,8 @@ export class MenuComponent implements OnInit {
 
   menuList: any[] = [];
 
+  active = true;
+
   constructor() {
 
   }
@@ -47,33 +50,38 @@ export class MenuComponent implements OnInit {
       {
         code: '001',
         name: 'หน้าแรก',
-        iconPath: '../../../assets/icon/Home.png',
+        iconPath: PrimeIcons.HOME,
         subMenu: []
       },
       {
         code: '002',
         name: 'งานของฉัน',
-        iconPath: '../../../assets/icon/Work.png',
+        iconPath: PrimeIcons.ALIGN_LEFT,
         subMenu: []
       },
       {
         code: '003',
         name: 'แผนจัดซื้อจัดจ้าง',
-        iconPath: '../../../assets/icon/Money.png',
+        iconPath: PrimeIcons.DOLLAR,
         subMenu: []
       },
       {
         code: '004',
         name: 'โครงการจัดซื้อจัดจ้าง',
-        iconPath: '../../../assets/icon/project.png',
+        iconPath: PrimeIcons.FOLDER,
         subMenu: [
-          { code: '001', name: 'โครงการและแจ้งความจำนง', iconPath: '../../../assets/icon/project-money.png' },
-          { code: '002', name: 'กระบวนการยกเลิกจัดซื้อจัดจ้าง', iconPath: '../../../assets/icon/project-cancel.png' },
-          { code: '003', name: 'รายงาน', iconPath: '../../../assets/icon/project-report.png' }
+          { code: '001', name: 'โครงการและแจ้งความจำนง', iconPath: PrimeIcons.CREDIT_CARD },
+          { code: '002', name: 'กระบวนการยกเลิกจัดซื้อจัดจ้าง', iconPath: PrimeIcons.FILE_EXPORT },
+          { code: '003', name: 'รายงาน', iconPath: PrimeIcons.FILE }
         ]
       }
     ]
 
+  }
+
+  showSubmenu(event: any) {
+    console.log(event);
+    
   }
 
 }

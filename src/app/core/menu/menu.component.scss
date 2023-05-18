@@ -12,12 +12,16 @@
     color: #000000;
 }
 .layout-menu-li {
-    padding: 16px;
+    padding: 16px 2rem;
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .menu-text {
     font-size: 14px;
     font-weight: 400;
+}
+.menu-icon {
+    font-size: 1.2rem;
 }
