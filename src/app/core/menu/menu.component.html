@@ -2,7 +2,7 @@
     <li class="layout-menu-li" *ngFor="let item of menuList" role="listMenu">
         <i [class]="item.iconPath" class="menu-icon"></i>
         <p class="menu-text ml-2 mr-3">{{item.name}}</p>
-        <div *ngIf="item.subMenu != null && item.subMenu.length > 0">
+        <!-- <div *ngIf="item.subMenu != null && item.subMenu.length > 0">
             <i class="pi pi-fw {{ active ? 'pi-angle-up' : 'pi-angle-down' }}"></i>
             <ul class="layout-subMenu-ul" *ngIf="active && item.subMenu.length > 0"
                 [@children]="active ? 'visibleAnimated' : 'hiddenAnimated'" role="menu">
@@ -11,6 +11,6 @@
                     <p class="menu-text ml-2 mr-3">{{item.name}}</p>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </li>
 </ul>

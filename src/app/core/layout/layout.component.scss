@@ -1,22 +1,26 @@
+@import "src/styles.scss";
+
 .layout-sidebar {
-    width: 262px;
-    background: rgba(0, 166, 230, 1);
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
+  width: 262px;
+  background: rgba(0, 166, 230, 1);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
 }
 
 app-header {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .layout-main-container {
-    margin-top: 55px;
-    margin-left: 262px;
+  position: fixed;
+  top: 55px;
+  left: 262px;
+  z-index: 2;
 }
