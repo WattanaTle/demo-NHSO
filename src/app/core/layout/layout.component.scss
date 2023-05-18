@@ -1,0 +1,17 @@
+.layout-sidebar {
+    width: 262px;
+    background: rgba(0, 166, 230, 1);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+app-header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

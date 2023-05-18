@@ -1,0 +1,9 @@
+<ul class="layout-menu-ul" role="menu">
+    <li class="layout-menu-li" *ngFor="let item of menuList" role="listMenu">
+        <img [src]="item.iconPath" class="mr-3">
+        <p class="menu-text mr-3">{{item.name}}</p>
+        <div *ngIf="item.subMenu != null && item.subMenu.length > 0">
+            <img src="../../../assets/icon/Drop-down.png">
+        </div>
+    </li>
+</ul>

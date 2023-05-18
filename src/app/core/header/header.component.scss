@@ -1,0 +1,32 @@
+$primary-color: linear-gradient(180deg, #81d0f4 0%, #00a6e6 100%);
+
+::ng-deep .custom-menu {
+  background: $primary-color;
+  padding: 10px 40px;
+  border-radius: 0;
+}
+
+::ng-deep .p-menubar-end {
+  display: flex;
+  align-items: center;
+}
+
+::ng-deep .p-menubar-end > .profileUser {
+  flex-direction: row;
+  color: #ffffff;
+  text-align: start;
+}
+
+::ng-deep .p-menubar-end > .profileUser > .profileName {
+  font-size: 16px;
+  font-weight: 700; 
+}
+
+::ng-deep .p-menubar-end > .profileUser > .profilePosition {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+::ng-deep .p-menubar-end > .notifications, ::ng-deep .p-menubar-end > .chevron {
+    cursor: default;
+}

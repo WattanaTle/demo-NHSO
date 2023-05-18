@@ -1,0 +1,15 @@
+<p-menubar [styleClass]="'custom-menu'">
+    <ng-template pTemplate="start">
+        <img src="../../../assets/image/Logo.png" />
+    </ng-template>
+    <ng-template pTemplate="end">
+        <img src="../../../assets/icon/Notifications.png" class="notifications">
+        <img src="../../../assets/icon/Divder-1.png" class="ml-3 mr-3">
+        <img src="../../../assets/icon/Circle-Profile.png" class="mr-3">
+        <div class="profileUser">
+            <p class="profileName">{{user.empCode}}&nbsp;{{user.firstName}}&nbsp;{{user.lastName}}</p>
+            <p class="profilePosition">{{user.positionName}}</p>
+        </div>
+        <img src="../../../assets/icon/Chevron.png" class="ml-5 chevron">
+    </ng-template>
+</p-menubar>

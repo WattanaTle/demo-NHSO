@@ -1,0 +1,12 @@
+.layout-menu-ul {
+    margin-top: 5rem;
+}
+.layout-menu-ul :hover {
+    background: rgba(129, 207, 244, 1);
+}
+.layout-menu-li {
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
