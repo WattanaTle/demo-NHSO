@@ -1,7 +1,11 @@
 .layout-menu-ul {
     margin-top: 5rem;
+    cursor: pointer;
 }
 .layout-menu-ul :hover {
+    background: rgba(129, 207, 244, 1);
+}
+.layout-menu-ul:focus {
     background: rgba(129, 207, 244, 1);
 }
 .layout-menu-li {
@@ -9,4 +13,15 @@
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    color: #ffffff;
+}
+.layout-menu-li :hover {
+    color: #000000;
+}
+.layout-menu-li :focus {
+    color: #000000;
+}
+.menu-text {
+    font-size: 14px;
+    font-weight: 400;
 }
